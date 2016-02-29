@@ -6,9 +6,9 @@
 
 # DeltaCalculator
 
-DeltaCalculator is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations.
+**DeltaCalculator** is a Swift Library focused on replacing `reloadData()` calls with animated insert, delete and move operations.
 
-DeltaCalculator tries to optimize the number of iterations to calculate all the changes, making sure the UI thread doesn't block.
+**DeltaCalculator** tries to optimize the number of iterations to calculate all the changes, making sure the UI thread doesn't block.
 
 This framework is based on [BKDeltaCalculator](https://github.com/Basket/BKDeltaCalculator) Objective-C library.
 
@@ -24,7 +24,7 @@ pod 'DeltaCalculator'
 ## Usage
 
 `DeltaCalculator` compares two arrays and computes the delta between them, represented by a `Delta` object.
-`DeltaCalculator` is generic, therefor, you need to supply the class in the initializer.
+`DeltaCalculator` is uses generics, therefor, you need to supply the class in the initializer.
 
 In case your generic class is `Equatable` you can initialize the calculator without an `equalityTest`.
 
