@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "Delta"
+  s.name             = "DeltaCalculator"
   s.version          = "0.1.0"
-  s.summary          = "Delta is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations."
+  s.summary          = "DeltaCalculator is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,18 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
-                      Delta is a Swift Library focused on replacing reloadData()
+                      DeltaCalculator is a Swift Library focused on replacing reloadData()
                       calls with animated insert, delete and move operations.
-                      Delta tries to optimize the number of iterations to calculate all the changes,
+                      DeltaCalculator tries to optimize the number of iterations to calculate all the changes,
                       making sure the UI thread doesn't block.
                       This framework is based on BKDeltaCalculator Objective-C library.
                        DESC
 
-  s.homepage         = "https://github.com/ivanbruel/Delta"
+  s.homepage         = "https://github.com/ivanbruel/DeltaCalculator"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Ivan Bruel" => "ivan.bruel@gmail.com" }
-  s.source           = { :git => "https://github.com/ivanbruel/Delta.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ivanbruel/DeltaCalculator.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ivanbruel'
 
   s.platform     = :ios, '8.0'
