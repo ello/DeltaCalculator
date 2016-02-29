@@ -1,24 +1,24 @@
-[![Version](https://img.shields.io/cocoapods/v/Delta.svg?style=flat)](http://cocoapods.org/pods/Delta)
-[![License](https://img.shields.io/cocoapods/l/Delta.svg?style=flat)](http://cocoapods.org/pods/Delta)
-[![Platform](https://img.shields.io/cocoapods/p/Delta.svg?style=flat)](http://cocoapods.org/pods/Delta)
+[![Version](https://img.shields.io/cocoapods/v/DeltaCalculator.svg?style=flat)](http://cocoapods.org/pods/DeltaCalculator)
+[![License](https://img.shields.io/cocoapods/l/DeltaCalculator.svg?style=flat)](http://cocoapods.org/pods/DeltaCalculator)
+[![Platform](https://img.shields.io/cocoapods/p/DeltaCalculator.svg?style=flat)](http://cocoapods.org/pods/DeltaCalculator)
 
-![Delta](http://i.imgur.com/yZOOcwC.png)
+![DeltaCalculator](http://i.imgur.com/yZOOcwC.png)
 
-# Delta
+# DeltaCalculator
 
-Delta is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations.
+DeltaCalculator is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations.
 
-Delta tries to optimize the number of iterations to calculate all the changes, making sure the UI thread doesn't block.
+DeltaCalculator tries to optimize the number of iterations to calculate all the changes, making sure the UI thread doesn't block.
 
-This framework is based on BKDeltaCalculator Objective-C library.
+This framework is based on [BKDeltaCalculator](https://github.com/Basket/BKDeltaCalculator) Objective-C library.
 
 ## Installation
 
-Delta is available through [CocoaPods](http://cocoapods.org). To install
+DeltaCalculator is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Delta'
+pod 'DeltaCalculator'
 ```
 
 ## Usage
