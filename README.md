@@ -23,7 +23,7 @@ pod 'DeltaCalculator'
 
 ## Usage
 
-`DeltaCalculator` comapres two arrays and computes the delta between them, represented by a `Delta` object.
+`DeltaCalculator` compares two arrays and computes the delta between them, represented by a `Delta` object.
 `DeltaCalculator` is generic, therefor, you need to supply the class in the initializer.
 
 In case your generic class is `Equatable` you can initialize the calculator without an `equalityTest`.
