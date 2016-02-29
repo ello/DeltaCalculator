@@ -1,0 +1,14 @@
+PODS:
+  - Delta (0.1.0)
+
+DEPENDENCIES:
+  - Delta (from `../`)
+
+EXTERNAL SOURCES:
+  Delta:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Delta: defec6621a1deb0f908bcce42425da1d4b1efa4e
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0750AC194D87093A71A327D26773E95D /* Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473B36301CF3D0F91EE3143E7D7D0FD /* Delta.swift */; };
+		2485793BE7C73EB90ED1F94AA3DF4E5B /* Delta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0A29A0635E16FD5EB9968ECF6F8ADA /* Delta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FE23D32616A8A2B55574C09C6AA58AD /* DeltaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6EAA025C218CA842865AAC3B1F9790 /* DeltaCalculator.swift */; };
+		3E3249AA54015E74CAD2C2ACBD7CA522 /* Delta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 904F84E9CB8E65E8E821F58260E9D780 /* Delta-dummy.m */; };
+		4E62DA0DB85FF3E1F1CA53ED934393EE /* Pods-Delta_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4983B8DFC678EBEC6818DB39694EFD /* Pods-Delta_Example-dummy.m */; };
+		5C534EE0EF64EA2F8272714C4B0EC779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6C3139011EEE273F726D9FAEFE50AA69 /* Pods-Delta_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F409C91DADCD7B1DFF4338D9AB391A50 /* Pods-Delta_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF734F210A5EE141E5307FA05DDE53C /* Pods-Delta_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0D848B481AFB691D8DA4C46BB9365B /* Pods-Delta_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		806E90BCD9460B06C742648EF5B7A4C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		8277AC68B1E0347B014968C2F2C7F34E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		ACC95E9B73E18CFDE3BCBCB7E16BA3ED /* Pods-Delta_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F117655BEA2071D14484C7FE5453AB /* Pods-Delta_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5D3264FBDBB5086D4C906620F4787F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5822FFDAC464112DCD4AEBB8E458479E;
+			remoteInfo = Delta;
+		};
+		CBCED48A0A9E32E16BF3710FEC438DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5822FFDAC464112DCD4AEBB8E458479E;
+			remoteInfo = Delta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D343D51B15843576D7801EC3EFAAD3 /* Pods-Delta_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Delta_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		03D748F00463B03AE8A262AA2FAC4332 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13188A1EBA4091122F2A3050D03F2EA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183DE426FB45C7F37BCF7B80D5C6E6DA /* Pods-Delta_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Delta_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26CB50E467A813F85073344A8588C737 /* Pods-Delta_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Delta_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		27F117655BEA2071D14484C7FE5453AB /* Pods-Delta_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Delta_Tests-dummy.m"; sourceTree = "<group>"; };
+		2A6EAA025C218CA842865AAC3B1F9790 /* DeltaCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeltaCalculator.swift; sourceTree = "<group>"; };
+		2ABFE8044D25308AA4850B97CB14644A /* Pods-Delta_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Delta_Example-resources.sh"; sourceTree = "<group>"; };
+		36596D2C4A34C443AE31F8B256AC6FB1 /* Delta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Delta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		378E3D9D64D2ADDC0DEF61750083C956 /* Pods-Delta_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Delta_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A2666C9A2129A6D87BF85B9D9CA3CA3 /* Delta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Delta-prefix.pch"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C0D848B481AFB691D8DA4C46BB9365B /* Pods-Delta_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Delta_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5E4708428E6387F325D8A1C1B61DFE66 /* Pods-Delta_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Delta_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A15538FAA04F1C16DC49C6FD043AC28 /* Pods-Delta_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Delta_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		74C03AB7BE0DD461DBD72798409E5CCB /* Pods-Delta_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Delta_Tests.modulemap"; sourceTree = "<group>"; };
+		7789FE57549E8973A7EE62E3A4E561BE /* Pods-Delta_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Delta_Example.modulemap"; sourceTree = "<group>"; };
+		7D3163458DE62D4083FE66EA97DF8511 /* Delta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Delta.modulemap; sourceTree = "<group>"; };
+		88EE60D19B4A9A3163D388B8D4C4BD16 /* Pods_Delta_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Delta_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		904F84E9CB8E65E8E821F58260E9D780 /* Delta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Delta-dummy.m"; sourceTree = "<group>"; };
+		963ABA726271D4BA783FAA93E56098AB /* Pods-Delta_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Delta_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9C0A29A0635E16FD5EB9968ECF6F8ADA /* Delta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Delta-umbrella.h"; sourceTree = "<group>"; };
+		9CFF27D595B8FDB45985BC56937642E4 /* Pods-Delta_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Delta_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BBB633A416A68A7ED4D3A728171FFE6D /* Pods_Delta_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Delta_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A98CE4DE7292CEC631052A756FD7BD /* Pods-Delta_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Delta_Tests-resources.sh"; sourceTree = "<group>"; };
+		DA590C0B955B1E120D0FD20268B2C154 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4983B8DFC678EBEC6818DB39694EFD /* Pods-Delta_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Delta_Example-dummy.m"; sourceTree = "<group>"; };
+		E1A7183CD9B97E7C2CC69AC9533408FD /* Pods-Delta_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Delta_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E473B36301CF3D0F91EE3143E7D7D0FD /* Delta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delta.swift; sourceTree = "<group>"; };
+		ED50C407354BF3B159B408FDC267C626 /* Delta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Delta.xcconfig; sourceTree = "<group>"; };
+		F409C91DADCD7B1DFF4338D9AB391A50 /* Pods-Delta_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Delta_Example-umbrella.h"; sourceTree = "<group>"; };
+		FCD75640C250110961C503973E6D3F22 /* Pods-Delta_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Delta_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BD37D5973F66DD4E37DAC89AE3AC142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806E90BCD9460B06C742648EF5B7A4C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA3DC25BCF762CF5F01930287F309E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C534EE0EF64EA2F8272714C4B0EC779 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2006CC9E6DB39523593EE26F630FB55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8277AC68B1E0347B014968C2F2C7F34E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BC2029B5A5515C78A8B57E24E3C4E93 /* Pods-Delta_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				03D748F00463B03AE8A262AA2FAC4332 /* Info.plist */,
+				74C03AB7BE0DD461DBD72798409E5CCB /* Pods-Delta_Tests.modulemap */,
+				6A15538FAA04F1C16DC49C6FD043AC28 /* Pods-Delta_Tests-acknowledgements.markdown */,
+				26CB50E467A813F85073344A8588C737 /* Pods-Delta_Tests-acknowledgements.plist */,
+				27F117655BEA2071D14484C7FE5453AB /* Pods-Delta_Tests-dummy.m */,
+				963ABA726271D4BA783FAA93E56098AB /* Pods-Delta_Tests-frameworks.sh */,
+				C0A98CE4DE7292CEC631052A756FD7BD /* Pods-Delta_Tests-resources.sh */,
+				4C0D848B481AFB691D8DA4C46BB9365B /* Pods-Delta_Tests-umbrella.h */,
+				FCD75640C250110961C503973E6D3F22 /* Pods-Delta_Tests.debug.xcconfig */,
+				9CFF27D595B8FDB45985BC56937642E4 /* Pods-Delta_Tests.release.xcconfig */,
+			);
+			name = "Pods-Delta_Tests";
+			path = "Target Support Files/Pods-Delta_Tests";
+			sourceTree = "<group>";
+		};
+		59B9E85C8584C40679F407DE56720B1A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E473B36301CF3D0F91EE3143E7D7D0FD /* Delta.swift */,
+				2A6EAA025C218CA842865AAC3B1F9790 /* DeltaCalculator.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5EF865C5C5964CD02DD41E74D5FE1DBF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E8E211AB20F2E2250F475FA942D8C9 /* Delta */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		720BF88C3480FAD75BBA4E83662E2E86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3163458DE62D4083FE66EA97DF8511 /* Delta.modulemap */,
+				ED50C407354BF3B159B408FDC267C626 /* Delta.xcconfig */,
+				904F84E9CB8E65E8E821F58260E9D780 /* Delta-dummy.m */,
+				3A2666C9A2129A6D87BF85B9D9CA3CA3 /* Delta-prefix.pch */,
+				9C0A29A0635E16FD5EB9968ECF6F8ADA /* Delta-umbrella.h */,
+				DA590C0B955B1E120D0FD20268B2C154 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Delta";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				5EF865C5C5964CD02DD41E74D5FE1DBF /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9414000886D5DFCCEBF99D549B9F8680 /* Products */,
+				7F70D51C8EAF5FBDC1DE9AC95302BB8D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F70D51C8EAF5FBDC1DE9AC95302BB8D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0B55F337576BD6814706ED87E8603 /* Pods-Delta_Example */,
+				0BC2029B5A5515C78A8B57E24E3C4E93 /* Pods-Delta_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9414000886D5DFCCEBF99D549B9F8680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36596D2C4A34C443AE31F8B256AC6FB1 /* Delta.framework */,
+				BBB633A416A68A7ED4D3A728171FFE6D /* Pods_Delta_Example.framework */,
+				88EE60D19B4A9A3163D388B8D4C4BD16 /* Pods_Delta_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E8E211AB20F2E2250F475FA942D8C9 /* Delta */ = {
+			isa = PBXGroup;
+			children = (
+				E28FE716476F886059BBDE93A5390A80 /* Pod */,
+				720BF88C3480FAD75BBA4E83662E2E86 /* Support Files */,
+			);
+			name = Delta;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B6E0B55F337576BD6814706ED87E8603 /* Pods-Delta_Example */ = {
+			isa = PBXGroup;
+			children = (
+				13188A1EBA4091122F2A3050D03F2EA4 /* Info.plist */,
+				7789FE57549E8973A7EE62E3A4E561BE /* Pods-Delta_Example.modulemap */,
+				183DE426FB45C7F37BCF7B80D5C6E6DA /* Pods-Delta_Example-acknowledgements.markdown */,
+				5E4708428E6387F325D8A1C1B61DFE66 /* Pods-Delta_Example-acknowledgements.plist */,
+				DD4983B8DFC678EBEC6818DB39694EFD /* Pods-Delta_Example-dummy.m */,
+				E1A7183CD9B97E7C2CC69AC9533408FD /* Pods-Delta_Example-frameworks.sh */,
+				2ABFE8044D25308AA4850B97CB14644A /* Pods-Delta_Example-resources.sh */,
+				F409C91DADCD7B1DFF4338D9AB391A50 /* Pods-Delta_Example-umbrella.h */,
+				03D343D51B15843576D7801EC3EFAAD3 /* Pods-Delta_Example.debug.xcconfig */,
+				378E3D9D64D2ADDC0DEF61750083C956 /* Pods-Delta_Example.release.xcconfig */,
+			);
+			name = "Pods-Delta_Example";
+			path = "Target Support Files/Pods-Delta_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E28FE716476F886059BBDE93A5390A80 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				59B9E85C8584C40679F407DE56720B1A /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		256118E2D43B03A4A0F6CBFCE87E63AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3139011EEE273F726D9FAEFE50AA69 /* Pods-Delta_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		263E4ADE366EFBE632BCA4487AC7E523 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF734F210A5EE141E5307FA05DDE53C /* Pods-Delta_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A136DBF9DAB232D8A750978888177F04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2485793BE7C73EB90ED1F94AA3DF4E5B /* Delta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5822FFDAC464112DCD4AEBB8E458479E /* Delta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5727E44CBCE77E83FF23E62C4E3E31AB /* Build configuration list for PBXNativeTarget "Delta" */;
+			buildPhases = (
+				B98872992C917CB93030675C8D2DDA9F /* Sources */,
+				F2006CC9E6DB39523593EE26F630FB55 /* Frameworks */,
+				A136DBF9DAB232D8A750978888177F04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Delta;
+			productName = Delta;
+			productReference = 36596D2C4A34C443AE31F8B256AC6FB1 /* Delta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1C6D5D7B69D1EE3B4D9B16EEE1551B4 /* Pods-Delta_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4737AD2029E4DDBDC83A199FD5855489 /* Build configuration list for PBXNativeTarget "Pods-Delta_Tests" */;
+			buildPhases = (
+				13E1DE91A936509E152376C96C55F891 /* Sources */,
+				4BD37D5973F66DD4E37DAC89AE3AC142 /* Frameworks */,
+				263E4ADE366EFBE632BCA4487AC7E523 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F80909EB260E44EA6C51818876B1E03 /* PBXTargetDependency */,
+			);
+			name = "Pods-Delta_Tests";
+			productName = "Pods-Delta_Tests";
+			productReference = 88EE60D19B4A9A3163D388B8D4C4BD16 /* Pods_Delta_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6C0D1AE8F87CABC785F8F2D409D8D69 /* Pods-Delta_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6C87216FCED3EF11C957989CA1B019 /* Build configuration list for PBXNativeTarget "Pods-Delta_Example" */;
+			buildPhases = (
+				8ECA86B3C86828E31262EA0E3F99AF9C /* Sources */,
+				8BA3DC25BCF762CF5F01930287F309E6 /* Frameworks */,
+				256118E2D43B03A4A0F6CBFCE87E63AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57F8485EE25DEFABD89F8ADB0773080 /* PBXTargetDependency */,
+			);
+			name = "Pods-Delta_Example";
+			productName = "Pods-Delta_Example";
+			productReference = BBB633A416A68A7ED4D3A728171FFE6D /* Pods_Delta_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9414000886D5DFCCEBF99D549B9F8680 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5822FFDAC464112DCD4AEBB8E458479E /* Delta */,
+				D6C0D1AE8F87CABC785F8F2D409D8D69 /* Pods-Delta_Example */,
+				A1C6D5D7B69D1EE3B4D9B16EEE1551B4 /* Pods-Delta_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13E1DE91A936509E152376C96C55F891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC95E9B73E18CFDE3BCBCB7E16BA3ED /* Pods-Delta_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA86B3C86828E31262EA0E3F99AF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E62DA0DB85FF3E1F1CA53ED934393EE /* Pods-Delta_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98872992C917CB93030675C8D2DDA9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3249AA54015E74CAD2C2ACBD7CA522 /* Delta-dummy.m in Sources */,
+				0750AC194D87093A71A327D26773E95D /* Delta.swift in Sources */,
+				2FE23D32616A8A2B55574C09C6AA58AD /* DeltaCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F80909EB260E44EA6C51818876B1E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Delta;
+			target = 5822FFDAC464112DCD4AEBB8E458479E /* Delta */;
+			targetProxy = C5D3264FBDBB5086D4C906620F4787F5 /* PBXContainerItemProxy */;
+		};
+		F57F8485EE25DEFABD89F8ADB0773080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Delta;
+			target = 5822FFDAC464112DCD4AEBB8E458479E /* Delta */;
+			targetProxy = CBCED48A0A9E32E16BF3710FEC438DB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		534FAC859E6E54EAB1F4D9804E8E0888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFF27D595B8FDB45985BC56937642E4 /* Pods-Delta_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Delta_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Delta_Tests/Pods-Delta_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Delta_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6505CA7C6E1C980C11A25E74D6FD04C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED50C407354BF3B159B408FDC267C626 /* Delta.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Delta/Delta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Delta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Delta/Delta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Delta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E1421A9B488E771DC2705F00FE41944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D343D51B15843576D7801EC3EFAAD3 /* Pods-Delta_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Delta_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Delta_Example/Pods-Delta_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Delta_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D442CEFD9AA3990C882D07EB9564A12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378E3D9D64D2ADDC0DEF61750083C956 /* Pods-Delta_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Delta_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Delta_Example/Pods-Delta_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Delta_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		842B813FDF362608CBBF8F342C9F7D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD75640C250110961C503973E6D3F22 /* Pods-Delta_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Delta_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Delta_Tests/Pods-Delta_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Delta_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8701D90493DA0C0BFBD7A02C2A10A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED50C407354BF3B159B408FDC267C626 /* Delta.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Delta/Delta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Delta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Delta/Delta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Delta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B6C87216FCED3EF11C957989CA1B019 /* Build configuration list for PBXNativeTarget "Pods-Delta_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1421A9B488E771DC2705F00FE41944 /* Debug */,
+				7D442CEFD9AA3990C882D07EB9564A12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4737AD2029E4DDBDC83A199FD5855489 /* Build configuration list for PBXNativeTarget "Pods-Delta_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842B813FDF362608CBBF8F342C9F7D65 /* Debug */,
+				534FAC859E6E54EAB1F4D9804E8E0888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5727E44CBCE77E83FF23E62C4E3E31AB /* Build configuration list for PBXNativeTarget "Delta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8701D90493DA0C0BFBD7A02C2A10A7D /* Debug */,
+				6505CA7C6E1C980C11A25E74D6FD04C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

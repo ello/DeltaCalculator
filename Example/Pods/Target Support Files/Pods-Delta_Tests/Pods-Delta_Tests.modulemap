@@ -1,0 +1,6 @@
+framework module Pods_Delta_Tests {
+  umbrella header "Pods-Delta_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

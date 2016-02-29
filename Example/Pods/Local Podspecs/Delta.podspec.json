@@ -1,0 +1,20 @@
+{
+  "name": "Delta",
+  "version": "0.1.0",
+  "summary": "A Lightweight Swift framework to calculate changes between arrays, updating UICollectionViews and UITableViews",
+  "description": "A Lightweight Swift framework to calculate changes between arrays,\nupdating UICollectionViews and UITableViews.\nDelta will replace your reloadData() calls with animated row insert,\ndelete and move operations.\nDelta tries to optimize the number of iterations to calculate all the changes,\nmaking sure the UI thread doesn't block.\nDelta is based on BKDeltaCalculator Objective-C library.",
+  "homepage": "https://github.com/ivanbruel/Delta",
+  "license": "MIT",
+  "authors": {
+    "Ivan Bruel": "ivan.bruel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ivanbruel/Delta.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*"
+}

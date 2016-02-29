@@ -9,32 +9,36 @@
 Pod::Spec.new do |s|
   s.name             = "Delta"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Delta."
+  s.summary          = "Delta is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
+                      Delta is a Swift Library focused on replacing reloadData()
+                      calls with animated insert, delete and move operations.
+                      Delta will replace your reloadData() calls with animated row insert,
+                      delete and move operations.
+                      Delta tries to optimize the number of iterations to calculate all the changes,
+                      making sure the UI thread doesn't block.
+                      Delta is based on BKDeltaCalculator Objective-C library.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Delta"
+  s.homepage         = "https://github.com/ivanbruel/Delta"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Ivan Bruel" => "ivan.bruel@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Delta.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/ivanbruel/Delta.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ivanbruel'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'Delta' => ['Pod/Assets/*.png']
-  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
