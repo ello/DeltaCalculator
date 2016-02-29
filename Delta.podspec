@@ -19,11 +19,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                       Delta is a Swift Library focused on replacing reloadData()
                       calls with animated insert, delete and move operations.
-                      Delta will replace your reloadData() calls with animated row insert,
-                      delete and move operations.
                       Delta tries to optimize the number of iterations to calculate all the changes,
                       making sure the UI thread doesn't block.
-                      Delta is based on BKDeltaCalculator Objective-C library.
+                      This framework is based on BKDeltaCalculator Objective-C library.
                        DESC
 
   s.homepage         = "https://github.com/ivanbruel/Delta"

@@ -58,3 +58,13 @@ public class DeltaCalculator<T> {
   }
 
 }
+
+extension DeltaCalculator where T: Equatable {
+
+  public convenience init() {
+    self.init() { (lhs, rhs) -> Bool in
+      return lhs == rhs
+    }
+  }
+
+}

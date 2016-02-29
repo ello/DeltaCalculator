@@ -13,9 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 
   var dataModel = [String]()
-  let deltaCalculator = DeltaCalculator<String>() { (lhs, rhs) -> Bool in
-    return lhs == rhs
-  }
+  let deltaCalculator = DeltaCalculator<String>()
 
   var number: Int = 0
   @IBOutlet var tableView: UITableView!
