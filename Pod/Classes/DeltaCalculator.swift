@@ -8,11 +8,18 @@
 
 import Foundation
 
+public enum DeltaOptions {
+  case IgnoreRemove
+  case IgnoreInsertAndMove
+}
+
 public class DeltaCalculator<T> {
 
+  public var options: [DeltaOptions]
   public let equalityTest: (T, T) -> Bool
 
-  public init(equalityTest: ((T, T) -> Bool)) {
+  public init(options: [DeltaOptions]? = nil, equalityTest: ((T, T) -> Bool)) {
+    self.options = options ?? []
     self.equalityTest = equalityTest
   }
 
@@ -30,26 +37,30 @@ public class DeltaCalculator<T> {
     }
 
     // Moved and added
-    for var index = 0; index < newArray.count; index++ {
-      guard !unchangedIndices.contains(index) else {
-        continue
-      }
+    if !options.contains(.IgnoreInsertAndMove) {
+      for var index = 0; index < newArray.count; index++ {
+        guard !unchangedIndices.contains(index) else {
+          continue
+        }
 
-      let newItem = newArray[index]
-      guard let oldIndex = oldArray.indexOf({ self.equalityTest($0, newItem) }) else {
-        addedNewIndices.addIndex(index)
-        continue
-      }
+        let newItem = newArray[index]
+        guard let oldIndex = oldArray.indexOf({ self.equalityTest($0, newItem) }) else {
+          addedNewIndices.addIndex(index)
+          continue
+        }
 
-      movedIndices.append((Int(oldIndex.value), index))
+        movedIndices.append((Int(oldIndex.value), index))
+      }
     }
 
     // Removed
-    for var index = 0; index < oldArray.count; index++ {
-      let oldItem = oldArray[index]
-      guard let _ = newArray.indexOf({ self.equalityTest($0, oldItem) }) else {
-        removedOldIndices.addIndex(index)
-        continue
+    if !options.contains(.IgnoreRemove) {
+      for var index = 0; index < oldArray.count; index++ {
+        let oldItem = oldArray[index]
+        guard let _ = newArray.indexOf({ self.equalityTest($0, oldItem) }) else {
+          removedOldIndices.addIndex(index)
+          continue
+        }
       }
     }
 
@@ -66,5 +77,5 @@ extension DeltaCalculator where T: Equatable {
       return lhs == rhs
     }
   }
-
+  
 }
