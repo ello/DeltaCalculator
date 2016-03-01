@@ -1,9 +1,7 @@
 //
 //  DeltaCalculator.swift
-//  ChicByChoice
 //
 //  Created by Ivan Bruel on 29/02/16.
-//  Copyright © 2016 Chic by Choice. All rights reserved.
 //
 
 import Foundation

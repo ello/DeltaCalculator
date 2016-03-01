@@ -1,9 +1,7 @@
 //
 //  Delta.swift
-//  ChicByChoice
 //
 //  Created by Ivan Bruel on 26/02/16.
-//  Copyright © 2016 Chic by Choice. All rights reserved.
 //
 
 import Foundation
