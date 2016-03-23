@@ -29,7 +29,7 @@ public class DeltaCalculator<T> {
 
     // Unchanged
     let minIndex = min(oldArray.count, newArray.count)
-    for index in 0...minIndex {
+    for index in 0..<minIndex {
       if equalityTest(oldArray[index], newArray[index]) {
         unchangedIndices.addIndex(index)
       }
@@ -37,7 +37,7 @@ public class DeltaCalculator<T> {
 
     // Moved and added
     if !options.contains(.IgnoreInsertAndMove) {
-      for index in 0...newArray.count {
+      for index in 0..<newArray.count {
         guard !unchangedIndices.contains(index) else {
           continue
         }
@@ -54,7 +54,7 @@ public class DeltaCalculator<T> {
 
     // Removed
     if !options.contains(.IgnoreRemove) {
-      for index in 0...oldArray.count {
+      for index in 0..<oldArray.count {
         let oldItem = oldArray[index]
         guard let _ = newArray.indexOf({ self.equalityTest($0, oldItem) }) else {
           removedOldIndices.addIndex(index)
@@ -76,5 +76,5 @@ extension DeltaCalculator where T: Equatable {
       return lhs == rhs
     }
   }
-  
+
 }
