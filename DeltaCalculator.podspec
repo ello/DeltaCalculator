@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DeltaCalculator"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "DeltaCalculator is a Swift Library focused on replacing reloadData() calls with animated insert, delete and move operations."
 
 # This description is used to generate tags and improve search results.
