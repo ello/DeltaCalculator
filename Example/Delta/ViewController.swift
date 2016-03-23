@@ -40,7 +40,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
 
   @IBAction func addClick() {
-    addItem("\(number++)")
+    addItem("\(number)")
+    number+=1
   }
 
   @IBAction func shuffleClick() {

@@ -47,7 +47,7 @@ public class DeltaCalculator<T> {
           continue
         }
 
-        movedIndices.append((Int(oldIndex.value), index))
+        movedIndices.append((oldIndex, index))
       }
     }
 
