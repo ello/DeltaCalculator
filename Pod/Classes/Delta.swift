@@ -9,46 +9,46 @@ import UIKit
 
 public class Delta {
 
-  public let addedIndices: NSIndexSet
-  public let removedIndices: NSIndexSet
+  public let addedIndices: IndexSet
+  public let removedIndices: IndexSet
   public let movedIndexPairs: [(Int, Int)]
-  public let unchangedIndices: NSIndexSet
+  public let unchangedIndices: IndexSet
 
-  public init(addedIndices: NSIndexSet, removedIndices: NSIndexSet, movedIndexPairs: [(Int, Int)],
-    unchangedIndices: NSIndexSet) {
+  public init(addedIndices: IndexSet, removedIndices: IndexSet, movedIndexPairs: [(Int, Int)],
+    unchangedIndices: IndexSet) {
       self.addedIndices = addedIndices
       self.removedIndices = removedIndices
       self.movedIndexPairs = movedIndexPairs
       self.unchangedIndices = unchangedIndices
   }
 
-  public func applyUpdatesToTableView(tableView: UITableView, inSection section: Int,
+  public func applyUpdatesToTableView(_ tableView: UITableView, inSection section: Int,
     withRowAnimation rowAnimation: UITableViewRowAnimation) {
-      let removedIndexPaths = removedIndices.map { NSIndexPath(forRow: $0, inSection: section) }
-      tableView.deleteRowsAtIndexPaths(removedIndexPaths, withRowAnimation: rowAnimation)
+      let removedIndexPaths = removedIndices.map { IndexPath(row: $0, section: section) }
+      tableView.deleteRows(at: removedIndexPaths, with: rowAnimation)
 
-      let addedIndexPaths = addedIndices.map { NSIndexPath(forRow: $0, inSection: section) }
-      tableView.insertRowsAtIndexPaths(addedIndexPaths, withRowAnimation: rowAnimation)
+      let addedIndexPaths = addedIndices.map { IndexPath(row: $0, section: section) }
+      tableView.insertRows(at: addedIndexPaths, with: rowAnimation)
 
       movedIndexPairs
-        .map { (NSIndexPath(forRow: $0.0, inSection: section),
-          NSIndexPath(forRow: $0.1, inSection: section)) }.forEach {
-            tableView.moveRowAtIndexPath($0.0, toIndexPath: $0.1)
+        .map { (IndexPath(row: $0.0, section: section),
+          IndexPath(row: $0.1, section: section)) }.forEach {
+            tableView.moveRow(at: $0.0, to: $0.1)
       }
   }
 
-  public func applyUpdatesToCollectionView(collectionView: UICollectionView,
+  public func applyUpdatesToCollectionView(_ collectionView: UICollectionView,
     inSection section: Int) {
-    let removedIndexPaths = removedIndices.map { NSIndexPath(forRow: $0, inSection: section) }
-    collectionView.deleteItemsAtIndexPaths(removedIndexPaths)
+    let removedIndexPaths = removedIndices.map { IndexPath(row: $0, section: section) }
+    collectionView.deleteItems(at: removedIndexPaths)
 
-    let addedIndexPaths = addedIndices.map { NSIndexPath(forRow: $0, inSection: section) }
-    collectionView.insertItemsAtIndexPaths(addedIndexPaths)
+    let addedIndexPaths = addedIndices.map { IndexPath(row: $0, section: section) }
+    collectionView.insertItems(at: addedIndexPaths)
 
     movedIndexPairs
-      .map { (NSIndexPath(forRow: $0.0, inSection: section),
-        NSIndexPath(forRow: $0.1, inSection: section)) }.forEach {
-          collectionView.moveItemAtIndexPath($0.0, toIndexPath: $0.1)
+      .map { (IndexPath(row: $0.0, section: section),
+        IndexPath(row: $0.1, section: section)) }.forEach {
+          collectionView.moveItem(at: $0.0, to: $0.1)
     }
   }
 

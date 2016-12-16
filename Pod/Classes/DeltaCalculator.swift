@@ -7,8 +7,8 @@
 import Foundation
 
 public enum DeltaOptions {
-  case IgnoreRemove
-  case IgnoreInsertAndMove
+  case ignoreRemove
+  case ignoreInsertAndMove
 }
 
 public class DeltaCalculator<T> {
@@ -16,35 +16,35 @@ public class DeltaCalculator<T> {
   public var options: [DeltaOptions]
   public let equalityTest: (T, T) -> Bool
 
-  public init(options: [DeltaOptions]? = nil, equalityTest: ((T, T) -> Bool)) {
+  public init(options: [DeltaOptions]? = nil, equalityTest: @escaping ((T, T) -> Bool)) {
     self.options = options ?? []
     self.equalityTest = equalityTest
   }
 
-  public func deltaFromOldArray(oldArray: [T], toNewArray newArray: [T]) -> Delta {
-    let unchangedIndices = NSMutableIndexSet()
+  public func deltaFromOldArray(_ oldArray: [T], toNewArray newArray: [T]) -> Delta {
+    var unchangedIndices = IndexSet()
     var movedIndices = [(Int, Int)]()
-    let addedNewIndices = NSMutableIndexSet()
-    let removedOldIndices = NSMutableIndexSet()
+    var addedNewIndices = IndexSet()
+    var removedOldIndices = IndexSet()
 
     // Unchanged
     let minIndex = min(oldArray.count, newArray.count)
     for index in 0..<minIndex {
       if equalityTest(oldArray[index], newArray[index]) {
-        unchangedIndices.addIndex(index)
+        unchangedIndices.insert(index)
       }
     }
 
     // Moved and added
-    if !options.contains(.IgnoreInsertAndMove) {
+    if !options.contains(.ignoreInsertAndMove) {
       for index in 0..<newArray.count {
         guard !unchangedIndices.contains(index) else {
           continue
         }
 
         let newItem = newArray[index]
-        guard let oldIndex = oldArray.indexOf({ self.equalityTest($0, newItem) }) else {
-          addedNewIndices.addIndex(index)
+        guard let oldIndex = oldArray.index(where: { self.equalityTest($0, newItem) }) else {
+          addedNewIndices.insert(index)
           continue
         }
 
@@ -53,11 +53,11 @@ public class DeltaCalculator<T> {
     }
 
     // Removed
-    if !options.contains(.IgnoreRemove) {
+    if !options.contains(.ignoreRemove) {
       for index in 0..<oldArray.count {
         let oldItem = oldArray[index]
-        guard let _ = newArray.indexOf({ self.equalityTest($0, oldItem) }) else {
-          removedOldIndices.addIndex(index)
+        guard let _ = newArray.index(where: { self.equalityTest($0, oldItem) }) else {
+          removedOldIndices.insert(index)
           continue
         }
       }
