@@ -23,7 +23,7 @@ public class Delta {
   }
 
   public func applyUpdatesToTableView(_ tableView: UITableView, inSection section: Int,
-    withRowAnimation rowAnimation: UITableViewRowAnimation) {
+    withRowAnimation rowAnimation: UITableView.RowAnimation) {
       let removedIndexPaths = removedIndices.map { IndexPath(row: $0, section: section) }
       tableView.deleteRows(at: removedIndexPaths, with: rowAnimation)
 
